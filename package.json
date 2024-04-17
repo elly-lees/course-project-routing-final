@@ -1,7 +1,13 @@
 {
   "name": "course-project-routing-final",
   "version": "0.0.0",
+  "engines": {
+    "node": "20.x"
+  },
+
   "scripts": {
+    "prestart": "npm cache clean --force && npm install",
+    "poststart": "echo 'Angular application is running.'",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
